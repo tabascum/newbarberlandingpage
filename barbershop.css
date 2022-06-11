@@ -1,0 +1,156 @@
+:root {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 50em;
+    background-color: #8e5f40;
+    display: flex;
+    flex-direction: column;
+  }
+
+  body {
+    margin: 0rem;
+    padding: -1rem;
+  }
+
+  header {
+    height: 4rem;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 1rem;
+    margin-right: 4rem;
+    justify-content: right;
+  }
+ 
+  .buttons button{
+    padding: 0.5rem;
+    border: hidden;
+    color: #fefae0;
+    background-color: #ae724d;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+
+  .buttons button:hover {
+    background-color: #fefae0d7;
+    color: #92552c;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgb(176, 173, 173);
+    transition: 0.05s;
+  }
+
+  .img-container,
+  .image {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .img {
+    height: 28rem;
+    padding-top: 1rem;
+  }
+
+  .image {
+    height: 25rem;
+    width: 60rem;
+    background: no-repeat center url(images/razor.webp);
+    flex-direction: column;
+    font-size: 1.2rem;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 4rem;
+    font-size: 1.5rem;
+    color: #fefae0;
+  }
+
+  .services {
+    height: 25rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #b57a528a;
+    }
+
+  .services-list {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: #fefae0;
+    list-style-type: none;
+  }
+
+  .card-id {
+    height: 15rem;
+    width: 11rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fefae0;
+    list-style-type: none;
+  }
+
+  .services-list a {
+    color: #92552c;
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+  }
+
+  .empty {
+    padding: 7.5rem;
+  }
+
+  .location {
+    background-color: #fefae054;
+    display: flex;
+    padding-bottom: 2.5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FEFAE0;
+  }
+
+  .contact {
+    height: 10rem;
+    background-color: #8b3f0c;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact img {
+    height: 5rem;
+  }
+
+  .social-media {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    list-style-type: none;
+    gap: 2.5rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+  }
+
+  footer {
+    height: 5rem;
+    color: #FEFAE0;
+    display: flex;
+    justify-content: center;
+  }
+
+.footer {
+  text-align: center;
+}
