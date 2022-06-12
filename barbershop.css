@@ -63,11 +63,11 @@
     font-size: 1.2rem;
   }
 
-  .about {
+  .about,
+  #span {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 4rem;
+    justify-content: center;
+    padding: 2.5rem;
     font-size: 1.3rem;
     color: #fefae0;
   }
@@ -149,8 +149,16 @@
     color: #FEFAE0;
     display: flex;
     justify-content: center;
+    text-align: center;
   }
 
-.footer {
-  text-align: center;
-}
+  .copyrights {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .page-author,
+  .page-author-a {
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
