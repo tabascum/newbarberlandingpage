@@ -31,7 +31,7 @@
     padding: 0.5rem;
     border: hidden;
     color: #fefae0;
-    background-color: #ae724d;
+    background-color: #c08b68;
     font-size: 1rem;
     text-decoration: none;
   }
@@ -73,11 +73,11 @@
   }
 
   .services {
+    background: no-repeat center url(images/pexels-nikolaos-dimou-1319459.webp);
     height: 25rem;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    background-color: #b57a528a;
     }
 
   .services-list {
@@ -106,9 +106,29 @@
     text-decoration: none;
   }
 
-  .empty {
-    padding: 7.5rem;
+/*
+
+  .card-images {
+    height: 25rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
   }
+
+  .cards {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .cards-id {
+    height: 18rem;
+    width: 14rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  */
 
   .location {
     background-color: #fefae054;
@@ -122,8 +142,9 @@
 
   .contact {
     height: 10rem;
-    background-color: #8b3f0c;
+
     display: flex;
+    justify-content: center;
     flex-direction: column;
   }
 
@@ -137,11 +158,6 @@
     justify-content: center;
     list-style-type: none;
     gap: 2.5rem;
-  }
-
-  .card {
-    padding: 1.5rem;
-    border-radius: 0.25rem;
   }
 
   footer {
