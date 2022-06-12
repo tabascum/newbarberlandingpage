@@ -19,6 +19,31 @@
     width: 80%; 
   }
 
+.myModal {
+  display: none; 
+  position: fixed; 
+  z-index: 2; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: #FEFAE0ae;
+}
+
+.myModal-content {
+  margin: 8% 40%;
+  width: 80%; 
+}
+
+.m-content {
+  position: fixed;
+  background-color: #5d5c5bcf;
+  box-sizing: border-box;
+  height: 10rem;
+  padding: 2rem;
+  width: 30rem;
+}
 
   
   /* The Close Button */

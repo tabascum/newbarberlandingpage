@@ -17,3 +17,19 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+//second modal
+
+let myModal = document.getElementById("myModal2");
+
+let submit = document.getElementById("submit");
+
+submit.onclick = function() {
+  myModal.style.display = "block";
+}
+
+window.onclick = function(event) {
+  if (event.target == myModal) {
+    myModal.style.display = "none";
+  }
+}
