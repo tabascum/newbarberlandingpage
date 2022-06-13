@@ -15,9 +15,20 @@
 
   header {
     height: 4rem;
-    padding-top: 2rem;
     display: flex;
     justify-content: flex-end;
+    background-color: #fefae011;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 32rem;
+    color: #fefae0;
+  }
+
+  .header h1 {
+    font-size: 2rem;
   }
   
   .buttons {
@@ -32,7 +43,7 @@
     border: hidden;
     color: #fefae0;
     background-color: #c08b68;
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-decoration: none;
   }
 
@@ -64,7 +75,7 @@
   }
 
   .about,
-  #span {
+  .span {
     display: flex;
     justify-content: center;
     padding: 2.5rem;
@@ -73,79 +84,58 @@
   }
 
   .services {
-    background: no-repeat center url(images/pexels-nikolaos-dimou-1319459.webp);
+    background: no-repeat center url(images/pexels-cottonbro-3992862.webp);
+    background-size: 91%;
     height: 25rem;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     }
 
   .services-list {
     display: flex;
     align-items: center;
     gap: 2rem;
-    color: #fefae0;
-    list-style-type: none;
+    color: #92552c;
+    padding: 0.5rem 1.25rem;
+    font-size: 1.1rem;
   }
 
   .card-id {
-    height: 15rem;
+    height: 10rem;
     width: 11rem;
     display: flex;
     flex-direction: column;
     text-align: center;
     background-color: #fefae0;
-    list-style-type: none;
   }
-
-  .services-list a {
-    color: #92552c;
-    padding: 0.5rem 1.25rem;
-    border-radius: 0.5rem;
-    font-size: 1.1rem;
-    text-decoration: none;
-  }
-
-/*
-
-  .card-images {
-    height: 25rem;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .cards {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-  }
-
-  .cards-id {
-    height: 18rem;
-    width: 14rem;
-    display: flex;
-    flex-direction: column;
-  }
-
-  */
 
   .location {
-    background-color: #fefae054;
+    background-color: #fefae021;
     display: flex;
-    padding-bottom: 2.5rem;
-    flex-direction: column;
-    align-items: center;
+    padding: 2.5rem;
+    gap: 2rem;
     justify-content: center;
     color: #FEFAE0;
   }
 
-  .contact {
-    height: 10rem;
-
+  .loc {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+  }
+
+  .head-loc {
+    font-size: 1.3rem;
+  }
+
+  .contact {
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+    color: #FEFAE0;
   }
 
   .contact img {
@@ -157,7 +147,20 @@
     align-items: center; 
     justify-content: center;
     list-style-type: none;
-    gap: 2.5rem;
+    gap: 3rem;
+  }
+
+  .social-media li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .social-media li:hover,
+  .social-media li:active {
+    font-size: 150%;
+    transition: 0.3s ease-in-out;
   }
 
   footer {
@@ -177,4 +180,13 @@
   .page-author-a {
     font-size: 0.9rem;
     text-decoration: none;
+    color: #FEFAE0;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+
+  .page-author a:hover {
+    box-shadow: inset 5rem 0 0 0 #FEFAE0;
+    color: #92552c;
   }
