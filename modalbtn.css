@@ -39,6 +39,7 @@
 .m-content {
   position: fixed;
   background-color: #e3d8d1;
+  color: #281a11cf;
   box-sizing: border-box;
   height: 10rem;
   padding: 2rem;
