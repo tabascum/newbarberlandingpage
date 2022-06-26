@@ -1,7 +1,7 @@
+//First modal displaying a cut schedule form
+
 let modal = document.getElementById("myModal");
-
 let btn = document.getElementById("myBtn");
-
 let span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function() {
@@ -18,10 +18,9 @@ window.onclick = function(event) {
   }
 }
 
-//second modal
+//Second modal displaying SMS type message on pushing the "submit" button
 
 let myModal = document.getElementById("myModal2");
-
 let submit = document.getElementById("submit");
 
 submit.onclick = function() {

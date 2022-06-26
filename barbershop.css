@@ -51,7 +51,7 @@
     background-color: #fefae0d7;
     color: #92552c;
     box-shadow: 0.2rem 0.2rem 0.2rem rgb(176, 173, 173);
-    transition: 0.05s;
+    transition: ease-in-out 0.05s;
   }
 
   .img-container,
@@ -85,7 +85,7 @@
 
   .services {
     background: no-repeat center url(images/pexels-cottonbro-3992862.webp);
-    background-size: 91%;
+    background-size: 100%;
     height: 25rem;
     width: 100%;
     display: flex;
@@ -114,18 +114,26 @@
     background-color: #fefae021;
     display: flex;
     padding: 2.5rem;
-    gap: 2rem;
+    text-align: center;
     justify-content: center;
     color: #FEFAE0;
   }
 
-  .loc {
+  .loc, .schedule {
+    height: 10rem;
+    width: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  .head-loc {
+  map {
+    margin-left: 2.5rem;
+  }
+
+  .head-loc, .sche {
+    display: flex;
+    flex-direction: column;
     font-size: 1.3rem;
   }
 

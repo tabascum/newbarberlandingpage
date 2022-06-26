@@ -1,123 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="barbershop.css">
-    <link rel="stylesheet" href="modalbtn.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="barbershop.css" />
+    <link rel="stylesheet" href="modalbtn.css" />
     <title>Barbearia Razor</title>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- Header Section -->
+
     <header>
-        <nav class="header">
-            <h1>Barbearia Razor</h1>
-            <div class="buttons">
-                <button class="btnone">Sobre a Razor</button>
-                <button class="btntwo">Serviços</button>
-                <button id="myBtn" class="myBtn">Marcações</button>
-                <div id="myModal" class="modal">
-                    <div class="modal-content">
-                        <div class="form">
-                            <span class="close">&times;</span>
-                            <div class="title">Bem vindo!</div>
-                            <div class="subtitle">Faz aqui a tua marcação</div>
-                            <div class="input-container ic1">
-                              <input id="firstname" class="input" type="text" placeholder=" " />
-                              <div class="cut cut-name"></div>
-                              <label for="firstname" class="placeholder">Nome</label>
-                            </div>
-                            <div class="input-container ic2">
-                              <input id="lastname" class="input" type="text" placeholder=" " />
-                              <div class="cut"></div>
-                              <label for="lastname" class="placeholder">Apelido</label>
-                            </div>
-                            <div class="input-container ic2">
-                              <input id="email" class="input" type="text" placeholder=" " />
-                              <div class="cut cut-short"></div>
-                              <label for="email" class="placeholder">Contacto</label>
-                            </div>
-                            <button class="submit" id="submit">submeter</button>
-                            <div id="myModal2" class="myModal">
-                                <div class="myModal-content">
-                                    <div class="m-content">
-                                        <p>Obrigado pela preferência!</p>
-                                        <p>Vais receber um SMS com a confirmação da tua marcação!</p>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                      </div>
+      <nav class="header">
+        <h1>Barbearia Razor</h1>
+        <div class="buttons">
+          <button class="btnone" onclick="window.location.href='#about'">
+            Sobre a Razor
+          </button>
+          <button class="btntwo" onclick="window.location.href='#services'">
+            Serviços
+          </button>
+          <button id="myBtn" class="myBtn">Marcações</button>
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <div class="form">
+                <span class="close">&times;</span>
+                <div class="title">Bem vindo!</div>
+                <div class="subtitle">Faz aqui a tua marcação</div>
+                <div class="input-container ic1">
+                  <input
+                    id="firstname"
+                    class="input"
+                    type="text"
+                    placeholder=" "
+                  />
+                  <div class="cut cut-name"></div>
+                  <label for="firstname" class="placeholder">Nome</label>
                 </div>
-                <script src="form.js"></script>
-                <button class="btnfour">Contactos</button>
+                <div class="input-container ic2">
+                  <input
+                    id="lastname"
+                    class="input"
+                    type="text"
+                    placeholder=" "
+                  />
+                  <div class="cut"></div>
+                  <label for="lastname" class="placeholder">Apelido</label>
+                </div>
+                <div class="input-container ic2">
+                  <input id="email" class="input" type="text" placeholder=" " />
+                  <div class="cut cut-short"></div>
+                  <label for="email" class="placeholder">Contacto</label>
+                </div>
+                <button class="submit" id="submit">submeter</button>
+                <div id="myModal2" class="myModal">
+                  <div class="myModal-content">
+                    <div class="m-content">
+                      <p>Obrigado pela preferência!</p>
+                      <p>
+                        Vais receber um SMS com a confirmação da tua marcação!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </nav>
+          </div>
+          <script src="form.js"></script>
+          <button class="btnfour" onclick="window.location.href='#location'">
+            Contactos
+          </button>
+        </div>
+      </nav>
     </header>
 
+    <!-- Logo's Band Section -->
+
     <section class="img-container">
-        <img class="img" src="images/razor_logo.svg" alt="">
-        <div class="image"></div>
+      <img class="img" src="images/razor_logo.svg" alt="" />
+      <div class="image" width="100%"></div>
     </section>
 
-    <section class="about">
-        <span class="span"></span>
-        <div class="about-info">
-            <p>A Barbearia Razor é propriedade do barbeiro Bernardo Massas, certificado desde 2016 pela Escola de Formação de Barbeiro e Cabeleireiro Magic Hair &#153;. Reconhecido na maestria da arte de bem cortar o cabelo, e depois da passagem por outros projetos de barbearia, lança a sua própria marca em 2017 e com isto abre este espaço.</p>
-            <p>Aficionado da arte da barbearia, tornou-se em 2018 um <em>Reuzel &#153; Scumbassador Oficial.</em></p>
-        </div>
-        <span class="span"></span>
+    <!-- About the BarberShop Section -->
+
+    <section id="about" class="about">
+      <span class="span"></span>
+      <div class="about-info">
+        <p>
+          A Barbearia Razor é propriedade do barbeiro Bernardo Massas,
+          certificado desde 2016 pela Escola de Formação de Barbeiro e
+          Cabeleireiro Magic Hair &#153;. Reconhecido na maestria da arte de bem
+          cortar o cabelo, e depois da passagem por outros projetos de
+          barbearia, lança a sua própria marca em 2017 e com isto abre este
+          espaço.
+        </p>
+        <p>
+          Aficionado da arte da barbearia, tornou-se em 2018 um
+          <em>Reuzel &#153; Scumbassador Oficial.</em>
+        </p>
+      </div>
+      <span class="span"></span>
     </section>
+
+    <!-- Services available section -->
 
     <section id="services" class="services">
-            <div class="services-list">
-                <div class="card-id">
-                    <p class=""><strong>Barba</strong></p>
-                    <p>Barba desde 8€</p>
-                </div>
-                <div class="card-id">
-                    <p class=""><strong>Cabelo</strong></p>
-                    <p>Cortes desde 10€</p>
-                </div>
-                <div class="card-id">
-                    <p class=""><strong>Cor</strong></p>
-                    <p>Preço e cores sob consulta</p>
-                </div>
-            </div>
+      <div class="services-list">
+        <div class="card-id">
+          <p class=""><strong>Barba</strong></p>
+          <p>Barba desde 8€</p>
+        </div>
+        <div class="card-id">
+          <p class=""><strong>Cabelo</strong></p>
+          <p>Cortes desde 10€</p>
+        </div>
+        <div class="card-id">
+          <p class=""><strong>Cor</strong></p>
+          <p>Preço e cores sob consulta</p>
+        </div>
+      </div>
     </section>
+
+    <!-- Social media and contact section -->
 
     <section class="contact">
-        <ul class="social-media">
-            <li class="card" alt="Facebook page"><a href="https://www.facebook.com/barbeariarazorcacem/"><img src="images/facebook.png" alt=""></a>Facebook</li>
-            <!-----<a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by Freepik - Flaticon</a>-->
-            <li class="card" alt="Instagram page"><a href="https://instagram.com/razorbarbearia/"><img src="images/instagram.png" alt=""></a>Instagram</li>
-            <!-----<a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Freepik - Flaticon</a>--->
-            <li class="card" alt="Mobile phone number"><a href=""><img src="images/whatsapp.png" alt=""></a>91x xxxxxx</li>
-            <!-----<a href="https://www.flaticon.com/free-icons/whatsapp" title="whatsapp icons">Whatsapp icons created by Freepik - Flaticon</a>-->
-            <li class="card" alt="Phone number"><a href=""><img src="images/phone.png" alt=""></a>21x xxxxxx</li>
-            <!-----<a href="https://www.flaticon.com/free-icons/phone" title="phone icons">Phone icons created by Uniconlabs - Flaticon</a>>-->
-        </ul>
-
+      <ul class="social-media">
+        <li class="card" alt="Facebook page">
+          <a href="https://www.facebook.com/barbeariarazorcacem/"
+            ><img src="images/facebook.png" alt="" /></a
+          >Facebook
+        </li>
+        <!-----<a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by Freepik - Flaticon</a>-->
+        <li class="card" alt="Instagram page">
+          <a href="https://instagram.com/razorbarbearia/"
+            ><img src="images/instagram.png" alt="" /></a
+          >Instagram
+        </li>
+        <!-----<a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Freepik - Flaticon</a>--->
+        <li class="card" alt="Mobile phone number">
+          <a href=""><img src="images/whatsapp.png" alt="" /></a>91x xxxxxx
+        </li>
+        <!-----<a href="https://www.flaticon.com/free-icons/whatsapp" title="whatsapp icons">Whatsapp icons created by Freepik - Flaticon</a>-->
+        <li class="card" alt="Phone number">
+          <a href=""><img src="images/phone.png" alt="" /></a>21x xxxxxx
+        </li>
+        <!-----<a href="https://www.flaticon.com/free-icons/phone" title="phone icons">Phone icons created by Uniconlabs - Flaticon</a>>-->
+      </ul>
     </section>
 
-    <section class="location" alt="location">
-        <div class="loc">
-            <p  class="head-loc"><strong>Onde Estamos</strong></p>
-            <p>Av. dos Bons Amigos Nº66A, 2735-521 Agualva-Cacém</p>
-        </div>
-       <div>
-            <map><iframe alt="map showing business location" height="100%" width="100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3110.69919386366!2d-9.294831282556151!3d38.7706028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ece1108a2f899%3A0x5e49428f10051d45!2sBarbearia%20Razor!5e0!3m2!1spt-PT!2spt!4v1654624933186!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></map>
-        </div>
-            
+    <!-- Location and schedule section -->
+
+    <section id="location" class="location" alt="location and schedule">
+      <div class="schedule">
+        <p class="sche"><strong>Horário :</strong></p>
+        <p>
+          Segunda, Quarta a Sábado: 9h - 18h <br />
+          Terça: Encerrado
+        </p>
+      </div>
+      <div class="loc">
+        <p class="head-loc"><strong>Onde Estamos :</strong></p>
+        <p>Av. dos Bons Amigos Nº66A, 2735-521 Agualva-Cacém</p>
+      </div>
+      <div>
+        <map
+          ><iframe
+            alt="map showing business location"
+            height="100%"
+            width="100%"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3110.69919386366!2d-9.294831282556151!3d38.7706028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ece1108a2f899%3A0x5e49428f10051d45!2sBarbearia%20Razor!5e0!3m2!1spt-PT!2spt!4v1654624933186!5m2!1spt-PT!2spt"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe
+        ></map>
+      </div>
     </section>
+
+    <!-- Footer -->
 
     <footer>
-        <div class="footer">
-           <p alt="copyrights" >Copyright &#169; Barbearia Razor &#153; Bernardo Massas</p>
-           <p class="page-author" alt="page author">Powered &#9889; <a class="page-author" href="https://github.com/tabascum">tabascum</a></p></div>
+      <div class="footer">
+        <p alt="copyrights">
+          Copyright &#169; Barbearia Razor &#153; Bernardo Massas
+        </p>
+        <p class="page-author" alt="page author">
+          Powered &#9889;
+          <a class="page-author" href="https://github.com/tabascum">tabascum</a>
+        </p>
+      </div>
     </footer>
-
-
-    
-</body>
+  </body>
 </html>
