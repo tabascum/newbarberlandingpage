@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="barbershop.css" />
     <link rel="stylesheet" href="modalbtn.css" />
+    <script src="https://kit.fontawesome.com/af875d1973.js" crossorigin="anonymous"></script>
     <title>Barbearia Razor</title>
   </head>
   <body>
+    
     <!-- Header Section -->
 
     <header>
@@ -29,27 +31,17 @@
                 <div class="title">Bem vindo!</div>
                 <div class="subtitle">Faz aqui a tua marcação</div>
                 <div class="input-container ic1">
-                  <input
-                    id="firstname"
-                    class="input"
-                    type="text"
-                    placeholder=" "
-                  />
+                  <input id="firstname" class="input" type="text" placeholder=" " required/>
                   <div class="cut cut-name"></div>
                   <label for="firstname" class="placeholder">Nome</label>
                 </div>
                 <div class="input-container ic2">
-                  <input
-                    id="lastname"
-                    class="input"
-                    type="text"
-                    placeholder=" "
-                  />
+                  <input id="lastname" class="input" type="text" placeholder=" "/>
                   <div class="cut"></div>
                   <label for="lastname" class="placeholder">Apelido</label>
                 </div>
                 <div class="input-container ic2">
-                  <input id="email" class="input" type="text" placeholder=" " />
+                  <input id="email" class="input" type="email" placeholder=" " required/>
                   <div class="cut cut-short"></div>
                   <label for="email" class="placeholder">Contacto</label>
                 </div>
@@ -72,20 +64,23 @@
             Contactos
           </button>
         </div>
+        <button class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        <script scr="responsive.js"></script>
+      </button>
       </nav>
     </header>
 
     <!-- Logo's Band Section -->
 
     <section class="img-container">
-      <img class="img" src="images/razor_logo.svg" alt="" />
-      <div class="image" width="100%"></div>
+      <img class="img" src="images/razor_logo.svg" alt="barbershop logo" />
+      <div class="image"></div>
     </section>
 
     <!-- About the BarberShop Section -->
 
     <section id="about" class="about">
-      <span class="span"></span>
       <div class="about-info">
         <p>
           A Barbearia Razor é propriedade do barbeiro Bernardo Massas,
@@ -100,7 +95,6 @@
           <em>Reuzel &#153; Scumbassador Oficial.</em>
         </p>
       </div>
-      <span class="span"></span>
     </section>
 
     <!-- Services available section -->
@@ -170,8 +164,8 @@
             height="100%"
             width="100%"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3110.69919386366!2d-9.294831282556151!3d38.7706028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ece1108a2f899%3A0x5e49428f10051d45!2sBarbearia%20Razor!5e0!3m2!1spt-PT!2spt!4v1654624933186!5m2!1spt-PT!2spt"
-            width="600"
-            height="450"
+            width="100%"
+            height="100%"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"

@@ -20,7 +20,7 @@
     background-color: #fefae011;
   }
 
-  .header {
+  nav {
     display: flex;
     align-items: center;
     gap: 32rem;
@@ -54,6 +54,40 @@
     transition: ease-in-out 0.05s;
   }
 
+  .hamburger {
+    display: none;
+  }
+
+  .hamburger:focus {
+    outline: 0;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .hamburger {
+      display: block;
+      border: 0;
+      background-color: transparent;
+      color: #ffffff;
+      font-size: 30px;
+      margin: 20px;
+      align-self: right;
+    }
+
+    .img-container{
+      display: flex;
+      width: 50%;
+    }
+
+    .header h1 {
+      display: none;
+    }
+
+    .image {
+      display: hide;
+    }
+ 
+  }
+
   .img-container,
   .image {
     display: flex;
@@ -67,8 +101,7 @@
   }
 
   .image {
-    height: 25rem;
-    width: 60rem;
+    width: 100%;
     background: no-repeat center url(images/razor.webp);
     flex-direction: column;
     font-size: 1.2rem;
@@ -82,6 +115,15 @@
     font-size: 1.3rem;
     color: #fefae0;
   }
+
+  @media only screen and (max-width:1000px) {
+    .services {
+      display: flex;
+      flex-direction: column;
+    }
+
+
+}
 
   .services {
     background: no-repeat center url(images/pexels-cottonbro-3992862.webp);
