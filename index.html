@@ -14,9 +14,9 @@
     <!-- Header Section -->
 
     <header>
-      <nav class="header">
+      <nav class="header" id="header">
         <h1>Barbearia Razor</h1>
-        <div class="buttons">
+        <div class="buttons" id="buttons">
           <button class="btnone" onclick="window.location.href='#about'">
             Sobre a Razor
           </button>
@@ -36,7 +36,7 @@
                   <label for="firstname" class="placeholder">Nome</label>
                 </div>
                 <div class="input-container ic2">
-                  <input id="lastname" class="input" type="text" placeholder=" "/>
+                  <input id="lastname" class="input" type="text" placeholder=" " required/>
                   <div class="cut"></div>
                   <label for="lastname" class="placeholder">Apelido</label>
                 </div>
@@ -71,11 +71,11 @@
       </nav>
     </header>
 
-    <!-- Logo's Band Section -->
+    <!-- Logo's Brand Section -->
 
     <section class="img-container">
       <img class="img" src="images/razor_logo.svg" alt="barbershop logo" />
-      <div class="image"></div>
+      <div class="image" id="image"></div>
     </section>
 
     <!-- About the BarberShop Section -->
@@ -119,6 +119,7 @@
     <!-- Social media and contact section -->
 
     <section class="contact">
+      <div id="contact">
       <ul class="social-media">
         <li class="card" alt="Facebook page">
           <a href="https://www.facebook.com/barbeariarazorcacem/"
@@ -141,6 +142,7 @@
         </li>
         <!-----<a href="https://www.flaticon.com/free-icons/phone" title="phone icons">Phone icons created by Uniconlabs - Flaticon</a>>-->
       </ul>
+    </div>
     </section>
 
     <!-- Location and schedule section -->
