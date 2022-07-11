@@ -65,7 +65,7 @@ nav {
 
 @media only screen and (max-width: 1000px) {
   .hamburger {
-    display: block;
+    display: flex;
     border: 0;
     background-color: transparent;
     color: #ffffff;
@@ -77,6 +77,15 @@ nav {
   .img-container {
     display: flex;
     justify-content: center;
+  }
+
+  .buttons {
+    display: none;
+    justify-content: right;
+  }
+
+  .buttons button {
+    display: block;
   }
 
   .header h1 {
@@ -118,17 +127,16 @@ nav {
 @media only screen and (max-width: 1000px) {
   .services-list {
     display: flex;
+    justify-content: center;
   }
 
   .services {
     display: flex;
-    background: cover;
     flex-direction: column;
   }
 
-  #contact {
+  .social-media {
     display: flex;
-    flex-direction: column-reverse;
     justify-content: center;
   }
 
