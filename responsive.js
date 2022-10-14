@@ -9,7 +9,6 @@ function toggleButton() {
 
 hamburgerButton.addEventListener('click', toggleButton);
 
-*/
 
 function showMenu () {
     let hamburger = getElementById("header");
@@ -20,14 +19,15 @@ function showMenu () {
     }
 }
 
+*/
 
-/*
 
-const hamburger =  document.getElementById('hamburger');
-const navItem =  document.getElementById('header');
+
+
+const hamburger =  document.getElementById('.hamburger');
+const navItem =  document.getElementById('button-l');
 
 hamburger.addEventListener('click', () => {
   navItem.classList.toggle('show');
 });
 
-*/

@@ -1,262 +1,163 @@
-:root {
-  font-family: "Roboto", Arial, sans-serif;
+* {
   margin: 0;
   padding: 0;
-  min-height: 50em;
-  background-color: #8e5f40;
-  display: flex;
-  flex-direction: column;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #8e5f40;
+  --text: #fefae0;
+  --shadow: #0a0a0a;
+  --opacity: #282828ab;
+  font-family: "Supreme", sans-serif;
 }
 
 body {
-  margin: 0rem;
-  padding: -1rem;
+  display: flex;
+  flex-direction: column;
+  background: var(--primary);
+  color: var(--text);
+  font-size: 1.2rem;
 }
 
 header {
-  height: 4rem;
   display: flex;
-  justify-content: flex-end;
-  background-color: #fefae011;
-  box-shadow: 5px 5px 10px #0a0a0a;
+  padding: 2rem 6rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > h1 {
+  font-size: 2;
+  text-shadow: 0.1rem 0.1rem 0.1rem var(--shadow);
 }
 
 nav {
-  display: flex;
-  align-items: center;
-  gap: 32rem;
-  color: #fefae0;
-}
-
-.header h1 {
-  font-size: 2rem;
-}
-
-.buttons {
-  display: flex;
-  gap: 1rem;
-  margin-right: 4rem;
-  justify-content: right;
-}
-
-.buttons button {
-  padding: 0.5rem;
-  border: hidden;
-  color: #fefae0;
-  background-color: #c08b68;
-  font-size: 1.1rem;
-  text-decoration: none;
-}
-
-.buttons button:hover {
-  background-color: #fefae0d7;
-  color: #92552c;
-  box-shadow: 0.2rem 0.2rem 0.2rem rgb(176, 173, 173);
-  transition: ease-in-out 0.05s;
-}
-
-.hamburger {
-  display: none;
-}
-
-.hamburger:focus {
-  outline: 0;
-}
-
-@media only screen and (max-width: 1000px) {
-  .hamburger {
-    display: flex;
-    border: 0;
-    background-color: transparent;
-    color: #ffffff;
-    font-size: 30px;
-    margin: 20px;
-    align-self: right;
-  }
-
-  .img-container {
-    display: flex;
-    justify-content: center;
-  }
-
-  .buttons {
-    display: none;
-    justify-content: right;
-  }
-
-  .buttons button {
-    display: block;
-  }
-
-  .header h1 {
-    display: none;
-  }
-
-  #image {
-    display: none;
-  }
-}
-
-.img-container,
-.image {
-  display: flex;
-  padding: 2rem;
-}
-
-.img {
-  height: 28rem;
-  padding-top: 1rem;
-}
-
-.image {
-  width: 100%;
-  background: no-repeat center url(images/razor.webp);
-  flex-direction: column;
-  font-size: 1.2rem;
-}
-
-.about,
-.span {
-  display: flex;
-  justify-content: center;
-  padding: 2.5rem;
-  font-size: 1.3rem;
-  color: #fefae0;
-}
-
-@media only screen and (max-width: 1000px) {
-  .services-list {
-    display: flex;
-    justify-content: center;
-  }
-
-  .services {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .social-media {
-    display: flex;
-    justify-content: center;
-  }
-
-  map {
-    display: none;
-  }
-}
-
-.services {
-  background: no-repeat center url(images/pexels-cottonbro-3992862.webp);
-  background-size: 100%;
-  height: 25rem;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.services-list {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  color: #92552c;
-  padding: 0.5rem 1.25rem;
-  font-size: 1.1rem;
-}
-
-.card-id {
-  height: 10rem;
-  width: 11rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  background-color: #fefae0;
-  box-shadow: 5px 5px 20px #000000;
-}
-
-.location {
-  background-color: #fefae021;
-  display: flex;
-  padding: 2.5rem;
-  text-align: center;
-  justify-content: center;
-  color: #fefae0;
-  box-shadow: 5px 5px 10px #0a0a0a;
-}
-
-.loc,
-.schedule {
-  height: 10rem;
-  width: 20rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-map {
-  margin-left: 2.5rem;
-}
-
-.head-loc,
-.sche {
-  display: flex;
-  flex-direction: column;
-  font-size: 1.3rem;
-}
-
-.contact {
-  height: 15rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-size: 1.2rem;
-  color: #fefae0;
-  box-shadow: 5px 5px 10px #0a0a0a;
-}
-
-.contact img {
-  height: 5rem;
+  display: inherit;
 }
 
 ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style-type: none;
-  gap: 3rem;
+  gap: 1.5rem;
+  display: inherit;
+  list-style: none;
+  text-align: center;
 }
 
-ul li {
+ul > li {
+  font-size: 1.2rem;
+}
+
+ul > li > a {
+  padding: 0.8rem;
+  color: var(--light);
+  text-decoration: none;
+  transition: all 0.4s;
+  border: 0.1rem solid transparent;
+}
+
+nav > ul > li > a:hover {
+  border-bottom: 0.1rem solid var(--shadow);
+}
+
+nav > ul > li > #contact-link {
+  border: 0.1rem solid var(--shadow);
+}
+
+nav > ul > li > #contact-link:hover {
+  box-shadow: 0rem 0.1rem 0.3rem var(--shadow);
+}
+
+section {
+  display: grid;
+  padding: 1rem 6rem;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+figure > .image {
+  max-width: 60%;
+}
+
+.about-text {
+  gap: 2rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+section#services {
+  display: flex;
+  background: fixed no-repeat center
+    url("./images/pexels-cottonbro-3992862.webp");
+  background-size: cover;
+}
+
+section > .services-list {
+  padding: 10rem 0;
+  justify-content: center;
+}
+
+.card {
+  width: 15rem;
+  display: flex;
+  height: 10rem;
+  padding: 0 1.5rem;
+  text-align: center;
+  color: var(--shadow);
+  flex-direction: column;
+  background: var(--text);
+  justify-content: space-around;
+}
+
+#social-media {
+  display: flex;
+  font-size: 2.5rem;
+  justify-content: center;
   align-items: center;
-  gap: 0.5rem;
+}
+
+#contact {
+  padding: 6rem;
+  align-items: center;
+  text-align: center;
+  background: var(--opacity);
+}
+
+#contact > div {
+  margin-bottom: 2rem;
 }
 
 footer {
-  height: 5rem;
-  color: #fefae0;
-  display: flex;
-  justify-content: center;
+  padding: 1rem 0;
+  font-size: 0.8rem;
   text-align: center;
 }
 
-.copyrights {
-  font-size: 1.5rem;
-  text-align: center;
-}
+@media (max-width: 1055px) {
+  header {
+    padding: 1rem 3rem;
+  }
 
-.page-author,
-.page-author-a {
-  font-size: 0.9rem;
-  text-decoration: none;
-  color: #fefae0;
-  margin: 0 -0.25rem;
-  padding: 0 0.25rem;
-  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
+  header > h1 {
+    font-size: 1.7rem;
+  }
 
-.page-author a:hover {
-  box-shadow: inset 5rem 0 0 0 #fefae0;
-  color: #92552c;
+  nav {
+    display: none;
+  }
+
+  section#about {
+    text-align: center;
+  }
+
+  .services-list {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+
+  #social-media {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
