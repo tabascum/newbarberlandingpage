@@ -68,33 +68,47 @@ ul > li > a {
   margin-right: 50rem;
 }
 
-.navbar-links > ul > li {
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
   display: block;
 }
 
-.navbar-links > ul > li > a:hover {
+.navbar-links li a:hover {
   background: var(--primary);
   borders: 0.1rem solid var(--shadow);
 }
 
-.navbar-links > ul > li > #contact-link {
+.navbar-links #contact-link {
+  background: var(--primary);
   border: 0.1rem solid var(--shadow);
 }
 
-.navbar-links > ul > li > #contact-link:hover {
-  background: var(--primary);
+.navbar-links #contact-link:hover {
   box-shadow: 0rem 0.1rem 0.3rem var(--shadow);
 }
 
 .toggle-button {
   position: absolute;
-  top: 1.5rem;
-  right: 1rem;
+  top: 2.5rem;
+  right: 0.75rem;
   display: none;
   flex-direction: column;
-  justify-content: space-around;
-  width: 30px;
-  height: 21px;
+  justify-content: space-between;
+  width: 38px;
+  height: 32px;
+  border-radius: 0.2rem;
+  padding: 0.3rem;
+  background: var(--primary);
+  box-shadow: 0rem 0.1rem 0.3rem var(--shadow);
 }
 
 .toggle-button .bar {
@@ -116,7 +130,7 @@ figure > .image {
 }
 
 #about {
-  margin-top: 6rem;
+  margin-top: 7rem;
 }
 
 .about-text {
@@ -159,14 +173,15 @@ section > .services-list {
 
 #contact {
   gap: 2rem;
-  padding: 6rem;
-  align-items: center;
+  padding: 4rem;
   text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
   background: var(--opacity);
 }
 
-#contact > div {
-  align-items: center;
+#contact > .map {
+  padding: 1rem;
 }
 
 footer {
@@ -189,12 +204,8 @@ footer {
   }
 
   .toggle-button {
+    top: 1.3rem;
     display: flex;
-  }
-
-  .navbar-links {
-    display: none;
-    width: 100%;
   }
 
   .navbar {
@@ -202,12 +213,19 @@ footer {
     align-items: flex-start;
   }
 
-  .navbar-links ul {
+  .navbar-links {
     width: 100%;
+    display: none;
+    margin-top: 0.5rem;
+    justify-content: center;
+  }
+
+  .navbar-links ul {
+    width: 50%;
     flex-direction: column;
   }
 
-  .navbar-links li {
+  .navbar-links ul li {
     text-align: center;
   }
 
@@ -232,5 +250,37 @@ footer {
   #social-media {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 465px) {
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-brand > h1 {
+    margin-right: 2rem;
+  }
+
+  .toggle-button {
+    top: 2.5rem;
+  }
+
+  figure {
+    padding: 3rem 0;
+  }
+
+  article.about-text {
+    margin: 0 0.8rem;
+  }
+
+  .schedule,
+  .location {
+    margin: 0 5rem;
+  }
+
+  iframe {
+    width: 90%;
   }
 }
