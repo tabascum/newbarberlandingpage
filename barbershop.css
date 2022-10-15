@@ -31,11 +31,6 @@ header {
   box-shadow: 0rem 0rem 0.8rem var(--shadow);
 }
 
-header > h1 {
-  font-size: 2rem;
-  text-shadow: 0.1rem 0.1rem 0.1rem var(--shadow);
-}
-
 ul {
   gap: 1.5rem;
   display: flex;
@@ -64,6 +59,11 @@ ul > li > a {
   justify-content: space-between;
 }
 
+.navbar-brand > h1 {
+  font-size: 2rem;
+  text-shadow: 0.2rem 0.2rem 0.3rem var(--shadow);
+}
+
 .navbar-ĺinks {
   margin-right: 50rem;
 }
@@ -76,6 +76,7 @@ ul > li > a {
 
 .navbar-links li {
   list-style: none;
+  text-shadow: 0.2rem 0.2rem 0.3rem var(--shadow);
 }
 
 .navbar-links li a {
@@ -84,7 +85,7 @@ ul > li > a {
 
 .navbar-links li a:hover {
   background: var(--primary);
-  borders: 0.1rem solid var(--shadow);
+  border: 0.1rem solid var(--shadow);
 }
 
 .navbar-links #contact-link {
@@ -93,7 +94,8 @@ ul > li > a {
 }
 
 .navbar-links #contact-link:hover {
-  box-shadow: 0rem 0.1rem 0.3rem var(--shadow);
+  background: transparent;
+  box-shadow: 0rem 0.2rem 0.3rem var(--shadow);
 }
 
 .toggle-button {
@@ -166,9 +168,12 @@ section > .services-list {
 
 #social-media {
   display: flex;
-  font-size: 2.5rem;
   justify-content: center;
   align-items: center;
+}
+
+#social-media > li {
+  font-size: 1.5rem;
 }
 
 #contact {
