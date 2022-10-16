@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #8e5f40;
+  --text: #fefae0;
+  --shadow: #0a0a0a;
+  --opacity: #282828ab;
+  font-family: "Supreme", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: var(--primary);
+  color: var(--text);
+  font-size: 1.2rem;
+  background: fixed no-repeat center
+    url("./images/pexels-cottonbro-3992862.webp");
+  background-size: cover;
+}
+
+section {
+  width: 50%;
+  min-height: 100vh;
+  align-self: end;
+  display: inherit;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(0.5rem);
+}
+
+form {
+  width: 55%;
+  gap: 0.4rem;
+  padding: 4rem;
+  display: inherit;
+  border-radius: 1rem;
+  flex-direction: column;
+  background: var(--opacity);
+  text-shadow: 0rem 0.2rem 0.3rem var(--shadow);
+}
+
+.form-field {
+  display: inherit;
+  flex-direction: column;
+  font-size: 1.3rem;
+}
+
+.form-field > input {
+  padding: 0 0.3rem;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  outline: none;
+  border: 2px solid transparent;
+}
+
+.form-field textarea {
+  padding: 0.3rem;
+  font-size: 1rem;
+  font-family: "Supreme", sans-serif;
+}
+
+button {
+  padding: 0.5rem;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: var(--text);
+  background: var(--primary);
+  border: 0.1rem solid var(--shadow);
+}
+
+button:hover {
+  box-shadow: 0rem 0.2rem 0.3rem var(--shadow);
+}
+
+@media (max-width: 1250px) {
+  section {
+    width: 100%;
+  }
+  form {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  form {
+    width: 80%;
+  }
+}

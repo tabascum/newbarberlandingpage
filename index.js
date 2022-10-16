@@ -6,5 +6,3 @@ const navbarLinks = document.querySelector(".navbar-links");
 toggle.onclick = () => {
   navbarLinks.classList.toggle("active");
 };
-
-// modal button behavior
