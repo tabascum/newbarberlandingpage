@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="./images/site.webmanifest">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -25,12 +30,12 @@
                 <h1>Faz aqui a tua marcação</h1>
             </div>
             <div class="form-field">
-                <label for="name">nome</label>
+                <label for="name" id="name-label">nome</label>
                 <input type="text" name="name" id="name">
             </div>
             <div class="form-field">
-                <label for="cellphone">telemóvel</label>
-                <input type="tel" name="cellphone" id="cellphone">
+                <label for="cellphone" id="cellphone-label">telemóvel</label>
+                <input type="number" name="cellphone" id="cellphone">
             </div>
             <div class="form-field">
                 <label for="textarea">mensagem</label>
@@ -39,7 +44,7 @@
             <div class="form-field">
                 <button id="appointmentBtn">marcar</button>
             </div>
-            <button id="displayData">mostrar dados gravados</button>
+            <!-- <button id="displayData">dados gravados localmente</button> -->
         </form>
     </section>
 </body>

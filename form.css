@@ -41,7 +41,9 @@ form {
   border-radius: 1rem;
   flex-direction: column;
   background: var(--opacity);
+  border: 0.01rem solid var(--shadow);
   text-shadow: 0rem 0.2rem 0.3rem var(--shadow);
+  box-shadow: 0.2rem 0.2rem 0.3rem var(--shadow);
 }
 
 .form-field {
