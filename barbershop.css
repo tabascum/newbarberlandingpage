@@ -198,6 +198,12 @@ footer {
   background-size: cover;
 }
 
+footer > div > p > a {
+  color: var(--text);
+  text-decoration: none;
+  background: var(--opacity);
+}
+
 @media (max-width: 1055px) {
   header {
     padding: 1rem 3rem;
