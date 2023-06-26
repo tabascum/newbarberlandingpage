@@ -7,3 +7,6 @@ JS has been added to pop-up the navbar in small screens as well as to storage lo
 Further functionalities are yet to be added.
 
 You can check the webpage here: https://tabascum.github.io/newbarberlandingpage/
+
+![image](https://github.com/tabascum/newbarberlandingpage/assets/102918241/d938de59-a49d-435f-8c4c-a189725fbe45)
+
